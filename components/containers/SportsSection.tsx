@@ -15,7 +15,7 @@ const SportsSection = () => {
       )}
     >
       {SPORTTYPES.map((sport) => (
-        <SportCard {...sport} />
+        <SportCard key={sport.title} {...sport} />
       ))}
     </Element>
   );

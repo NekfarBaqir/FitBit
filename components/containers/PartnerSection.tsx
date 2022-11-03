@@ -1,6 +1,6 @@
 import { PARTNERS } from "@const/Partners";
 import clsx from "clsx";
-import React from "react";
+import React, { Fragment } from "react";
 
 const PartnerSection = () => {
   return (
@@ -18,7 +18,9 @@ const PartnerSection = () => {
         OUR BRAND PARTNERS
       </h2>
       <div className="flex justify-between items-center w-full md:w-[60%]">
-        {PARTNERS.map((Item) => Item)}
+        {PARTNERS.map((Item, index) => (
+          <Fragment key={index}>{Item}</Fragment>
+        ))}
       </div>
     </div>
   );

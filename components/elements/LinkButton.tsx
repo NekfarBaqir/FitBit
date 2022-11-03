@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import React, { FC, ReactElement } from "react";
 import clsx from "clsx";
 import { Link } from "react-scroll";
 
@@ -6,7 +6,7 @@ interface ButtonPropsType {
   to: string;
   intent?: "primary" | "white" | "transparent" | "menu";
   className?: string;
-  children: string;
+  children: string|ReactElement;
 }
 const LinkButton: FC<ButtonPropsType> = ({
   to,
@@ -24,7 +24,7 @@ const LinkButton: FC<ButtonPropsType> = ({
         intent === "white" &&
           "bg-white border-white border text-black hover:bg-slate-300 hover:border-slate-300",
         intent === "transparent" &&
-          "bg-transparent border border-white text-white hover:text-slate-300 hover:border-slate-300",
+          "bg-transparent border  text-white hover:text-slate-300 hover:border-slate-300",
         intent === "menu" && "bg-transparent text-black hover:text-gray-700",
         className
       )}

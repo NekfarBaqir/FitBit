@@ -10,7 +10,7 @@ import SubscribeSection from "@ui/SubscribeSection";
 
 export default function Home() {
   return (
-    <Layout>
+    <Layout >
       <>
         <HeroSection />
         <PartnerSection />

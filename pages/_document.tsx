@@ -5,6 +5,7 @@ export default function Document() {
     <Html>
       <Head />
       {/* font and favIcon set */}
+      <title>FitBit, Bare to be the champion of the world</title>
       <link rel="icon" href="images/favIcon.png"></link>
       <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link
